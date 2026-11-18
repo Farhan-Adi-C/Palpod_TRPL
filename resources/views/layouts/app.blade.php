@@ -25,7 +25,11 @@
         <div class="h-full overflow-y-auto overflow-x-hidden rounded-t-[28px] rounded-b-none bg-[#0f0d13] [scrollbar-color:#36343b_transparent] [scrollbar-width:thin]">
 
             {{-- Topbar --}}
-            @include('components.topbar')
+            @hasSection('topbar')
+                @yield('topbar')
+            @else
+                @include('components.topbar')
+            @endif
 
             {{-- Konten halaman --}}
             <main class="px-4 pb-6 sm:px-6 rounded-b-[28px]">

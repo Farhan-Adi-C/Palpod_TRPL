@@ -60,7 +60,7 @@
 
             {{-- Split button: Play + More --}}
             <div class="mt-2 flex items-center gap-0.5">
-                <a href="{{ $watch($hero['id']) }}" target="_blank" rel="noopener noreferrer"
+                <a href="{{ route('podcast.show', 1) }}"
                    class="flex h-14 items-center gap-2 rounded-l-[28px] rounded-r-[4px] bg-[#d0bcff] px-6 text-sm font-medium tracking-[0.1px] text-[#381e72] transition-colors hover:bg-[#dccdff]">
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M8 5v14l11-7z"/>
@@ -89,7 +89,7 @@
         {{-- Carousel: scroll horizontal hanya di dalam baris ini, bukan di halaman --}}
         <div class="-ml-2 -mr-4 flex gap-2 overflow-x-auto pb-2 sm:-mr-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             @foreach ($newRelease as $video)
-                <a href="{{ $watch($video['id']) }}" target="_blank" rel="noopener noreferrer"
+                <a href="{{ route('podcast.show', 1) }}"
                    class="relative block aspect-video w-[280px] shrink-0 overflow-hidden rounded-3xl bg-[#211f26] sm:w-[362px]">
                     <img src="{{ $thumb($video['id']) }}"
                          onerror="this.onerror=null;this.src='{{ $thumb($video['id'], 'hqdefault') }}'"
