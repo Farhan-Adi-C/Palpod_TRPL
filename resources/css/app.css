@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-display: 'Bodoni Moda', 'Didot', 'Times New Roman', serif;
+
+    --color-surface: #0f0d13;
+    --color-surface-dim: #141218;
+    --color-container: #2b2930;
+    --color-container-low: #1d1b20;
+    --color-on-surface: #e6e0e9;
+    --color-on-surface-variant: #cac4d0;
+    --color-outline: #938f99;
+    --color-outline-variant: #49454f;
+    --color-primary: #d0bcff;
+    --color-on-primary: #381e72;
+    --color-secondary-container: #4a4458;
+    --color-on-secondary-container: #e8def8;
+    --color-brand: #6a38f3;
+    --color-lime: #dcfe00;
+    --color-cream: #f4f0c8;
+}
+
+@layer base {
+    html {
+        -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+        @apply bg-surface-dim font-sans text-on-surface;
+    }
+}
+
+@layer utilities {
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .poster-serif {
+        font-family: var(--font-display);
+    }
+}
