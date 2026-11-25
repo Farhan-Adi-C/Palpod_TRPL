@@ -2,6 +2,10 @@
 
 @section('title', 'Palpod - Home')
 
+@section('topbar')
+    @include('components.topbar')
+@endsection
+
 @section('content')
     {{-- Font untuk badge EPS --}}
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">

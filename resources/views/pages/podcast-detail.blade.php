@@ -61,21 +61,7 @@
                 {{-- Overlay gelap halus --}}
                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40"></div>
 
-                {{-- Header Video (Logos di tengah atas) --}}
-                <div class="absolute top-4 left-1/2 -translate-x-1/2 flex items-center gap-3">
-                    <div class="flex items-center gap-1 text-[11px] font-medium tracking-wider text-white">
-                        <span class="inline-block h-3.5 w-3.5 rounded-full border border-white/80"></span>
-                        <span class="text-[9px] uppercase leading-tight font-semibold">Universitas<br>Gadjah Mada</span>
-                    </div>
-                    <span class="rounded bg-[#009688] px-1 py-0.5 text-[9px] font-bold text-white uppercase tracking-wider">trpl</span>
-                    <span class="text-xs font-bold text-white tracking-tight">pal<span class="text-[#e4f400]">p</span>od</span>
-                </div>
-
-                {{-- Badge EPS #1 (Kanan Atas) --}}
-                <div class="absolute top-0 right-8 bg-[#5b3ae6] text-white px-3.5 py-3 text-center rounded-b-xl shadow-lg">
-                    <span class="block text-[11px] font-bold tracking-wider leading-none">EPS</span>
-                    <span class="block text-2xl font-black leading-none mt-1">#{{ $podcast['eps'] }}</span>
-                </div>
+             
 
                 {{-- Judul Besar di Tengah Gambar --}}
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none px-4">

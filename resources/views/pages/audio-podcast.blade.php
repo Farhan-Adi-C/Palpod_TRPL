@@ -3,8 +3,6 @@
 @section('title', 'Palpod - Audio Podcast')
 
 @section('container_class', 'bg-[#141218]')
-@section('topbar')
-@endsection
 @section('main_class', 'pb-2.5')
 
 @section('content')
@@ -16,7 +14,7 @@
     <div class="grid min-h-[calc(100vh-1.25rem)] grid-cols-1 gap-2.5 md:grid-cols-[minmax(0,1fr)_340px] lg:grid-cols-[minmax(0,1fr)_410px]">
 
         {{-- ================= KIRI: Player + New Video ================= --}}
-        <section class="flex min-w-0 flex-col justify-between gap-16 pb-10 pt-12 lg:pb-[86px] lg:pt-[118px]">
+        <section class="flex min-w-0 flex-col justify-between gap-16 px-4 pb-10 pt-12 sm:px-6 lg:px-8 lg:pb-[86px] lg:pt-[118px]">
 
             {{-- Player --}}
             <div class="mx-auto w-full max-w-[644px]">

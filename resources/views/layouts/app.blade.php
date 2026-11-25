@@ -25,12 +25,8 @@
     <div class="fixed inset-y-0 left-0 right-0 p-2.5 pb-0 transition-[left] duration-200 motion-reduce:transition-none lg:left-[230px] lg:group-[.sidebar-hidden]/body:left-0">
         <div class="h-full overflow-y-auto overflow-x-hidden @yield('container_class', 'rounded-t-[28px] rounded-b-none bg-[#0f0d13]') [scrollbar-color:#36343b_transparent] [scrollbar-width:thin]">
 
-            {{-- Topbar --}}
-            @hasSection('topbar')
-                @yield('topbar')
-            @else
-                @include('components.topbar')
-            @endif
+            {{-- Topbar (dipisah per halaman) --}}
+            @yield('topbar')
 
             {{-- Konten halaman --}}
             <main class="@yield('main_class', 'px-4 pb-6 sm:px-6 rounded-b-[28px]')">
